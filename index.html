@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#163c33">
+  <meta name="theme-color" content="#3038d8">
   <meta name="description" content="Thoughtful residential, deep, move-in/move-out and commercial cleaning from Joana's Cleaning in Hillside, New Jersey. Tell us about your space and request a personalized estimate.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Joana's Cleaning | A little more room to breathe">
@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
   <title>Joana's Cleaning | House & Office Cleaning in Hillside, NJ</title>
   <script type="application/ld+json">
   {
@@ -453,6 +453,226 @@
       body.motion-ready [data-reveal],body.motion-ready [data-reveal="left"],body.motion-ready [data-reveal="right"],body.motion-ready [data-reveal="scale"] { opacity: 1 !important; transform: none !important; transition: none !important; }
       .button-primary:before { display: none; }
     }
+
+    /* JOANA'S SIGNATURE SYSTEM — bright cobalt, papaya coral, butter yellow and lilac.
+       Intentionally distinct from the forest/sage Happy Cleaning site. */
+    :root {
+      --pine: #3038d8;
+      --pine-2: #252aa8;
+      --pine-3: #6468f2;
+      --sage: #fff07b;
+      --sage-2: #f0ebff;
+      --cream: #fffaf4;
+      --paper: #ffffff;
+      --ink: #211a35;
+      --muted: #716980;
+      --line: #e5deee;
+      --clay: #ff705f;
+      --clay-2: #ffe2dc;
+      --gold: #f4d54e;
+      --shadow: 0 24px 68px rgba(48,56,216,.15);
+      --radius: 18px;
+    }
+    body { background: var(--cream); }
+    h1,h2,h3,h4,.brand-copy strong,.float-card strong,.hero-caption strong,.care-label h3,.process-card h3 { font-family: "Bricolage Grotesque","DM Sans",sans-serif; }
+    .brand-copy small { letter-spacing: .17em; }
+    .announcement { background: var(--clay); color: var(--ink); font-weight: 700; }
+    .announcement a { color: var(--ink); text-decoration-thickness: 2px; }
+    .header { background: rgba(255,250,244,.94); border-bottom-color: rgba(48,56,216,.12); }
+    .brand-mark { border-radius: 13px; background: var(--pine); color: var(--sage); transform: rotate(-6deg); }
+    .brand:hover .brand-mark { transform: rotate(8deg) scale(1.05); border-radius: 13px 50% 50% 50%; }
+    .nav-links { color: #39334f; }
+    .nav-links > a:not(.button):after { height: 3px; background: var(--clay); }
+    .button { border-radius: 13px; }
+    .button-primary { border-radius: 13px; background: var(--pine); box-shadow: 5px 5px 0 rgba(255,112,95,.82); }
+    .button-primary:hover { background: var(--pine-2); box-shadow: 2px 2px 0 var(--clay); }
+    .button-light { border: 1.5px solid rgba(48,56,216,.22); background: rgba(255,255,255,.72); }
+    .button-clay { border-radius: 13px; background: var(--sage); color: var(--ink); }
+    .hero { min-height: 680px; display: flex; align-items: center; padding: 72px 0 62px; background: var(--sage); }
+    .hero:before { top: -37%; right: -5%; width: min(65vw,800px); background: radial-gradient(circle,rgba(255,112,95,.3),rgba(255,112,95,.08) 49%,transparent 70%); }
+    .hero:after { position:absolute; z-index:-1; left:auto; right:43%; top:12%; bottom:auto; width:140px; height:140px; border:2px solid rgba(48,56,216,.16); border-radius:35% 65% 62% 38%; box-shadow:0 0 0 18px rgba(48,56,216,.035),0 0 0 36px rgba(48,56,216,.025); content:""; pointer-events:none; transform:rotate(22deg); }
+    .hero-grid { grid-template-columns: 1fr .95fr; gap: 42px; }
+    .hero .eyebrow { color: var(--pine-2); }
+    .hero h1 { max-width: 710px; font-size: clamp(3.7rem,7.1vw,7.1rem); letter-spacing:-.065em; line-height:.95; }
+    .hero h1 .accent { color: var(--pine); font-family:"Fraunces",serif; font-style:italic; font-weight:600; letter-spacing:-.075em; }
+    .hero h1 .accent:after { bottom:7px; height:12px; background:var(--clay); opacity:.92; transform:rotate(-2.7deg); }
+    .hero .lead { color:#57516b; max-width:560px; }
+    .hero-actions .button { min-height:58px; }
+    .hero-proof { align-items:center; }
+    .proof-stars { color:#dd782f; }
+    .hero-image { inset: 0 0 21px 27px; border: 8px solid var(--cream); border-radius: 46% 46% 16px 16px; box-shadow: 13px 14px 0 var(--clay); }
+    .hero-image img { filter:saturate(1.08); }
+    .hero-image:after { background:linear-gradient(180deg,transparent 45%,rgba(24,19,54,.58)); }
+    .hero-caption { bottom:43px; }
+    .float-card { border:2px solid var(--ink); border-radius:14px; box-shadow:6px 7px 0 var(--pine); }
+    .float-card.top { top:58px; left:-14px; }
+    .float-card.bottom { right:-18px; bottom:8px; background:var(--clay); border-color:var(--clay); box-shadow:6px 7px 0 var(--ink); }
+    .float-card.bottom p { color:#37223a; }
+    .float-icon { background:var(--sage); color:var(--pine); }
+    .trust-strip { background:var(--cream); border-block-color:rgba(48,56,216,.12); }
+    .trust-item { color:var(--ink); }
+    .trust-item svg { color:var(--pine); }
+    .ticker { background:var(--pine); color:#fff; padding:20px 0; }
+    .ticker-group { font-size:.8rem; letter-spacing:.2em; }
+    .ticker-star { color:var(--sage); }
+    .services { background:var(--cream); }
+    .section-head .eyebrow { color:var(--pine); }
+    .section-head h2 { letter-spacing:-.06em; }
+    .service-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+    .service-card { min-height:300px; padding:27px; border:1.5px solid #ded5ed; border-radius:9px 26px 9px 26px; background:white; box-shadow:0 4px 0 rgba(48,56,216,.04); }
+    .service-card:nth-child(2),.service-card:nth-child(5) { border-radius:26px 9px 26px 9px; background:#fff0ec; }
+    .service-card:nth-child(3) { background:#f0ebff; }
+    .service-card:nth-child(4) { background:#fff8cf; }
+    .service-card:nth-child(6) { background:#e8f3ff; }
+    .service-card:hover { transform:translateY(-7px) rotate(-.35deg); border-color:var(--pine); box-shadow:7px 8px 0 rgba(48,56,216,.14); }
+    .service-card:before { right:-65px; top:-65px; width:150px; height:150px; background:radial-gradient(circle,rgba(255,112,95,.18),transparent 70%); }
+    .service-icon { width:56px; height:56px; margin-bottom:24px; border-radius:13px; background:var(--sage); color:var(--pine); }
+    .service-card:nth-child(2) .service-icon,.service-card:nth-child(5) .service-icon { background:var(--clay-2); }
+    .service-card:nth-child(3) .service-icon { background:#dad5ff; }
+    .service-card:nth-child(4) .service-icon { background:#f5df5c; }
+    .service-card:nth-child(6) .service-icon { background:#cde6ff; }
+    .service-card p { color:#645d72; }
+    .text-link { color:var(--pine); }
+    .care { background:var(--pine); color:white; }
+    .scroll-story-section { position:relative; min-height:190vh; padding:0; overflow:clip; background:var(--pine); color:white; }
+    .scroll-story-section > .container { position:sticky; top:70px; display:flex; width:min(var(--max),calc(100% - 48px)); height:calc(100vh - 70px); flex-direction:column; justify-content:center; gap:28px; overflow:hidden; }
+    .scroll-story-section .care-heading { flex:0 0 auto; align-items:flex-end; gap:45px; margin:0; }
+    .scroll-story-section .care-heading .eyebrow { color:var(--sage); }
+    .scroll-story-section .care-heading h2 { color:white; font-size:clamp(2.6rem,5vw,5rem); line-height:.98; }
+    .scroll-story-section .care-heading .lead { max-width:365px; color:rgba(255,255,255,.76); }
+    .scroll-story-section .care-grid { display:flex; width:max-content; flex:0 0 auto; grid-template-columns:none; grid-template-rows:none; gap:23px; will-change:transform; }
+    .scroll-story-section .care-card,
+    .scroll-story-section .care-card:first-child,
+    .scroll-story-section .care-card:nth-child(2),
+    .scroll-story-section .care-card:nth-child(3) { position:relative; display:block; width:min(43vw,510px); height:min(43vh,395px); min-height:320px; flex:0 0 min(43vw,510px); grid-column:auto; grid-row:auto; border:6px solid rgba(255,255,255,.14); border-radius:8px 36px 8px 36px; background:#e4e3f8; }
+    .scroll-story-section .care-card:nth-child(2) { border-radius:36px 8px 36px 8px; }
+    .scroll-story-section .care-card:nth-child(3) { border-radius:8px 8px 36px 8px; }
+    .scroll-story-section .care-card img { filter:saturate(1.08); }
+    .scroll-story-section .care-label { left:24px; right:24px; bottom:23px; }
+    .scroll-story-section .care-label span { display:inline-block; padding:7px 10px; border-radius:3px; background:var(--sage); color:var(--ink); }
+    .scroll-story-section .care-label h3 { max-width:380px; font-size:clamp(1.6rem,3vw,2.6rem); }
+    .story-scroll-hint { display:flex; align-items:center; gap:16px; width:min(600px,100%); color:rgba(255,255,255,.7); font-size:.68rem; font-weight:800; letter-spacing:.16em; }
+    .story-progress-track { height:4px; flex:1; overflow:hidden; border-radius:10px; background:rgba(255,255,255,.22); }
+    .story-progress-track span { display:block; width:0; height:100%; border-radius:10px; background:var(--sage); }
+    .story-scroll-hint strong { color:white; white-space:nowrap; font-size:.75rem; }
+    .why-grid { gap:80px; }
+    #approach { background:#f0ebff; }
+    .why-photo { border-radius:10px 100px 10px 10px; box-shadow:12px 13px 0 var(--clay); }
+    .why-note { max-width:278px; border-radius:12px; background:var(--sage); color:var(--ink); box-shadow:8px 8px 0 var(--pine); }
+    .why-note p { color:#57516b; }
+    .benefit-check { background:#dcd7ff; color:var(--pine); border-radius:8px; }
+    .process { background:#fff2e8; }
+    .process-card { border-top:2px solid rgba(48,56,216,.2); }
+    .step-number { width:56px; height:56px; border:1.5px solid var(--ink); border-radius:9px 18px 9px 18px; background:var(--sage); box-shadow:4px 4px 0 var(--clay); font-size:1.1rem; }
+    .process-card:nth-child(2) .step-number { background:#e1dcff; box-shadow:4px 4px 0 var(--pine); }
+    .process-card:nth-child(3) .step-number { background:#ffdfd8; box-shadow:4px 4px 0 var(--gold); }
+    .process-card:hover { transform:translateY(-7px); border-color:var(--clay); }
+    .reviews { background:#201a37; }
+    .reviews:before { border-color:rgba(255,255,255,.1); box-shadow:0 0 0 34px rgba(255,255,255,.025),0 0 0 70px rgba(255,255,255,.02); }
+    .reviews .section-head .eyebrow { color:var(--sage); }
+    .review-card { border:1.5px solid rgba(255,255,255,.1); border-radius:9px 24px 9px 24px; background:#32294e; }
+    .review-card:nth-child(2) { background:#fff07b; color:var(--ink); border-color:#fff07b; border-radius:24px 9px 24px 9px; }
+    .review-card:nth-child(3) { background:#ffded7; color:var(--ink); border-color:#ffded7; }
+    .review-card:nth-child(2) blockquote,.review-card:nth-child(3) blockquote { color:#322746; }
+    .review-card:nth-child(2) .review-author strong,.review-card:nth-child(3) .review-author strong { color:var(--ink); }
+    .review-card:nth-child(2) .review-author small,.review-card:nth-child(3) .review-author small { color:#71677d; }
+    .review-card:nth-child(2) .review-avatar,.review-card:nth-child(3) .review-avatar { background:white; color:var(--pine); }
+    .review-card:nth-child(2) .review-stars,.review-card:nth-child(3) .review-stars { color:#bf5b31; }
+    .review-proof .source-dot { background:var(--sage); }
+    .reviews .button-clay { background:var(--sage); color:var(--ink); }
+    .reviews .button-light { border-color:rgba(255,255,255,.28); }
+    .service-area { background:var(--cream); }
+    .area-panel { border:1.5px solid #ddd5ee; border-radius:10px 32px 10px 32px; background:#f0ebff; }
+    .area-tag { border-color:#d5cfee; color:#393355; border-radius:6px 13px 6px 13px; }
+    .faq { background:#fff; }
+    .faq-item { border-bottom-color:#e4def0; }
+    .faq-question { font-size:1rem; }
+    .faq-question[aria-expanded="true"] { color:var(--pine); }
+    .quote-section { padding:96px 0; background:var(--clay); }
+    .quote-wrap { grid-template-columns:.92fr 1.08fr; gap:40px; border:0; border-radius:12px 42px 12px 42px; background:var(--clay); padding:45px; }
+    .quote-copy h2 { color:var(--ink); }
+    .quote-copy .eyebrow { color:var(--pine-2); }
+    .quote-form { border:2px solid var(--ink); border-radius:12px 28px 12px 28px; box-shadow:9px 10px 0 var(--pine); }
+    .field input,.field select,.field textarea { border-radius:8px; border-color:#ddd5e9; }
+    .field input:focus,.field select:focus,.field textarea:focus { border-color:var(--pine); box-shadow:0 0 0 3px rgba(48,56,216,.11); }
+    .form-submit { box-shadow:5px 5px 0 var(--clay); }
+    .footer { background:#17132b; }
+    .footer .brand-mark { background:var(--sage); color:var(--pine); }
+    .footer .brand-copy small { color:rgba(255,255,255,.62); }
+    .footer-links a:hover { color:var(--sage); }
+    .scroll-progress span { background:linear-gradient(90deg,var(--pine),var(--clay),var(--sage)); }
+    .chat-launcher { border-radius:14px; background:var(--pine); box-shadow:6px 7px 0 var(--clay); }
+    .chat-launcher:hover { transform:translateY(-3px); }
+    .chat-launcher-icon { border-radius:10px; background:var(--sage); color:var(--pine); }
+    .chat-panel { border:2px solid var(--pine); border-radius:14px 24px 14px 24px; }
+    .chat-head { background:var(--pine); }
+    .chat-botmark { border-radius:11px; background:var(--sage); color:var(--pine); }
+    .chat-bubble { border-radius:13px 13px 13px 3px; }
+    .chat-bubble.user { background:var(--pine); }
+    .chat-quick button { border-color:#dad3f0; border-radius:8px 14px 8px 14px; }
+    .chat-quick button:hover { background:var(--sage-2); border-color:var(--pine); }
+    .chat-send { border-radius:10px; background:var(--pine); }
+    @media (max-width: 1050px) {
+      .hero h1 { font-size:clamp(3.7rem,7.4vw,5.8rem); }
+      .service-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .scroll-story-section .care-card,
+      .scroll-story-section .care-card:first-child,
+      .scroll-story-section .care-card:nth-child(2),
+      .scroll-story-section .care-card:nth-child(3) { width:min(50vw,470px); flex-basis:min(50vw,470px); }
+    }
+    @media (max-width: 780px) {
+      .hero { min-height:0; padding:49px 0 39px; }
+      .hero-grid { grid-template-columns:minmax(0,1fr); }
+      .hero h1 { font-size:clamp(3.5rem,11.4vw,5rem); }
+      .hero:after { right:10%; top:38%; width:80px; height:80px; }
+      .hero-image { box-shadow:8px 9px 0 var(--clay); }
+      .float-card { box-shadow:4px 5px 0 var(--pine); }
+      .scroll-story-section { min-height:0; padding:75px 0; overflow:hidden; }
+      .scroll-story-section > .container { position:static; display:block; width:min(100% - 36px,var(--max)); height:auto; overflow:visible; }
+      .scroll-story-section .care-heading { display:block; margin-bottom:27px; }
+      .scroll-story-section .care-heading h2 { font-size:clamp(2.3rem,9vw,3.8rem); }
+      .scroll-story-section .care-heading .lead { margin-top:15px; }
+      .scroll-story-section .care-grid { display:grid; width:auto; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:245px 190px; gap:12px; transform:none !important; }
+      .scroll-story-section .care-card,
+      .scroll-story-section .care-card:first-child,
+      .scroll-story-section .care-card:nth-child(2),
+      .scroll-story-section .care-card:nth-child(3) { width:auto; height:auto; min-height:180px; flex:auto; grid-column:auto; grid-row:auto; border-width:4px; }
+      .scroll-story-section .care-card:first-child { grid-column:1 / -1; }
+      .scroll-story-section .care-label { left:15px; right:15px; bottom:14px; }
+      .scroll-story-section .care-label h3 { font-size:1.1rem; }
+      .story-scroll-hint { margin-top:20px; }
+      .why-grid { gap:42px; }
+      .quote-section { padding:70px 0; }
+      .quote-wrap { grid-template-columns:minmax(0,1fr); gap:28px; padding:28px; }
+      .quote-form { box-shadow:6px 7px 0 var(--pine); }
+      .chat-launcher { box-shadow:4px 5px 0 var(--clay); }
+    }
+    @media (max-width: 510px) {
+      .announcement { font-size:.72rem; }
+      .hero h1 { font-size:clamp(3.15rem,12.5vw,4.5rem); }
+      .hero-visual { min-height:435px; }
+      .float-card.top { left:-3px; }
+      .float-card.bottom { right:-4px; }
+      .trust-item { font-size:.72rem; }
+      .service-grid { grid-template-columns:minmax(0,1fr); }
+      .service-card { min-height:auto; padding:23px; }
+      .scroll-story-section .care-grid { grid-template-columns:minmax(0,1fr); grid-template-rows:260px 190px 190px; }
+      .scroll-story-section .care-card:first-child { grid-column:auto; }
+      .scroll-story-section .care-card h3 { font-size:1.25rem; }
+      .story-scroll-hint { font-size:.6rem; gap:10px; }
+      .process-card { padding:19px 0 21px; }
+      .quote-wrap { padding:20px; border-radius:10px 26px 10px 26px; }
+      .quote-form { padding:20px; }
+      .review-card { border-radius:12px; }
+      .chat-launcher { right:12px; bottom:80px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .scroll-story-section { min-height:0 !important; }
+      .scroll-story-section > .container { position:static !important; height:auto !important; }
+      .scroll-story-section .care-grid { transform:none !important; }
+      .ticker-track,.float-card,.float-card.bottom { animation:none !important; }
+    }
+
   </style>
 </head>
 <body>
@@ -485,8 +705,8 @@
       <div class="container hero-grid">
         <div class="hero-copy" data-reveal="left">
           <span class="eyebrow">Hillside, New Jersey · Home & workplace care</span>
-          <h1>A clean home.<br>A <span class="accent">clearer mind.</span></h1>
-          <p class="lead">Life leaves enough on your to-do list. Let Joana's Cleaning help make your home or workspace feel fresh, comfortable, and cared for—with cleaning tailored to your space and priorities.</p>
+          <h1>A little more joy.<br>A lot more <span class="accent">clean.</span></h1>
+          <p class="lead">Let the busywork fade into the background. Joana's Cleaning brings a little more calm to your home or workspace, with thoughtful care shaped around the way you live.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#quote">Tell us what you need <svg viewBox="0 0 24 24" class="icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
             <a class="button button-light" href="#services">Explore our services <svg viewBox="0 0 24 24" class="icon"><path d="m7 10 5 5 5-5"/></svg></a>
@@ -530,14 +750,15 @@
       </div>
     </section>
 
-    <section class="section care" id="care-details">
+    <section class="section care scroll-story-section" id="care-details">
       <div class="container">
-        <div class="care-heading" data-reveal="left"><div><span class="eyebrow">The comfort is in the details</span><h2>A fresher feeling,<br>one corner at a time.</h2></div><p class="lead">A home doesn't need to look perfect to feel cared for. We start with your priorities and shape the visit around the spaces that matter most.</p></div>
-        <div class="care-grid">
+        <div class="care-heading" data-reveal="left"><div><span class="eyebrow">A little scroll. A fresh perspective.</span><h2>See the little things<br>that change the feeling.</h2></div><p class="lead">A home doesn't need to look perfect to feel cared for. We start with your priorities and shape the visit around the spaces that matter most.</p></div>
+        <div class="care-grid" id="care-track">
           <article class="care-card" data-reveal="scale"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=82" alt="Bright kitchen with a clean countertop and warm natural light" loading="lazy" decoding="async"><div class="care-label"><span>01 · The reset</span><h3>A kitchen ready for real life.</h3></div></article>
           <article class="care-card" data-reveal="scale" data-delay="1"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=82" alt="Cleaning professional carefully attending to a home surface" loading="lazy" decoding="async"><div class="care-label"><span>02 · The detail</span><h3>Care beyond the obvious.</h3></div></article>
           <article class="care-card" data-reveal="scale" data-delay="2"><img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1000&q=82" alt="Serene and tidy home interior with softly lit surfaces" loading="lazy" decoding="async"><div class="care-label"><span>03 · The feeling</span><h3>Room to slow down.</h3></div></article>
         </div>
+        <div class="story-scroll-hint" aria-live="polite"><span>SCROLL TO EXPLORE</span><div class="story-progress-track"><span id="story-progress-bar"></span></div><strong id="story-progress-count">01 / 03</strong></div>
       </div>
     </section>
 
@@ -722,12 +943,33 @@
       } else {
         reveals.forEach(function (el) { el.classList.add('is-visible'); });
       }
+      var storySection = document.getElementById('care-details');
+      var storyTrack = document.getElementById('care-track');
+      var storyProgressBar = document.getElementById('story-progress-bar');
+      var storyProgressCount = document.getElementById('story-progress-count');
       var scrollQueued = false;
       function updateScroll() {
         var max = document.documentElement.scrollHeight - window.innerHeight;
         var value = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
         if (progress) progress.style.transform = 'scaleX(' + value + ')';
         if (header) header.classList.toggle('is-scrolled', window.scrollY > 20);
+        if (storySection && storyTrack && window.innerWidth > 780 && !reduceMotion) {
+          var storyRect = storySection.getBoundingClientRect();
+          var storyTravel = Math.max(1, storySection.offsetHeight - window.innerHeight);
+          var storyProgress = Math.min(1, Math.max(0, -storyRect.top / storyTravel));
+          var storyMaxShift = Math.max(0, storyTrack.scrollWidth - storySection.querySelector('.container').clientWidth);
+          storyTrack.style.transform = 'translate3d(' + (-storyMaxShift * storyProgress) + 'px,0,0)';
+          if (storyProgressBar) storyProgressBar.style.width = (storyProgress * 100) + '%';
+          if (storyProgressCount) {
+            var cards = storyTrack.querySelectorAll('.care-card').length || 3;
+            var activeCard = Math.min(cards, Math.max(1, Math.round(storyProgress * (cards - 1)) + 1));
+            storyProgressCount.textContent = String(activeCard).padStart(2,'0') + ' / ' + String(cards).padStart(2,'0');
+          }
+        } else if (storyTrack) {
+          storyTrack.style.transform = '';
+          if (storyProgressBar) storyProgressBar.style.width = '0%';
+          if (storyProgressCount) storyProgressCount.textContent = '01 / 03';
+        }
         if (!reduceMotion && window.innerWidth > 780) {
           var image = document.querySelector('.hero-image img');
           if (image) image.style.translate = '0 ' + Math.min(window.scrollY * .02, 17) + 'px';
